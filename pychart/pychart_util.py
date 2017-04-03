@@ -101,7 +101,7 @@ def TextAlignType(val):
 def apply_format(format, val, defaultidx):
     if format == None:
         return None
-    elif type(format) == StringType:
+    elif type(format) == str:
         return format % val[defaultidx]
     else:
         return format(*val)
